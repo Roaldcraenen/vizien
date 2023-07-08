@@ -15,8 +15,8 @@ class reCAPTCHA_Login_Form {
 
     /** class constructor */
     public function __construct() {
-        $this->public_key  = '6LeXtUgUAAAAAA9M0kL6PsLVxOebWEizsjVv-q0Z';
-        $this->private_key = '6LeXtUgUAAAAANAItTvZa6UAqUYozKvJ8u5wOHB_';
+        $this->public_key  = '';
+        $this->private_key = '';
 
         // adds the captcha to the login form
         add_action( 'login_form', array( $this, 'captcha_display' ) );
